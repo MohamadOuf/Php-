@@ -3,7 +3,7 @@
 
 if (isset($_GET{["FIrstName"])){//show feedback
 echo $_GET{["FIrstName"];
-}else{//show form
+} else {//show form
 echo'
 <form> "action"
 first Name: <input type="text" name="FirstName" /><br />
