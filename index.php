@@ -1,19 +1,23 @@
 <?php
-//echo '<p>this is PHP! </p>';
 
-if (isset($_GET{["FIrstName"])){//show feedback
-echo $_GET{["FIrstName"];
-} else {//show form
-echo'
-<form> "action"
-first Name: <input type="text" name="FirstName" /><br />
-<input type="submit" />
-</form>
+//echo 'This is PHP!</p>;
 
 
+if (isset($_GET["FirstName"])) { // show feedback
+  // echo $_GET["FirstName"];
 
-</form>
+  echo '<pre>';
+  var_dump($_GET);
+    echo '<pre>';
 
-';
-
+} else { // show form
+  echo  '
+  <form action="">
+  <p> First Name: <input type="text" name="FirstName" /></p>
+    <p> Last Name: <input type="text" name="LastName" /></p>
+  <input type="submit" />
+  </form> 
+  ';
 }
+
+?>
